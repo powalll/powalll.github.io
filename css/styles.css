@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background: #123
+    background: #fff
 }
 
 .container{
@@ -10,7 +10,8 @@ body{
 }
 
 header{
-    background: #dedbdb
+    /*background: #dedbdb*/
+    background: rgb(203,209,212)
 }
 
 header::after{
@@ -25,7 +26,78 @@ header::after{
     border-radius:50%;
     overflow: hidden;
     margin-left:10px;
-    margin-top:5px;
+    margin-top:4px;
+}
+
+.powall{
+    float:left;
+    margin-left:40px;
+    margin-top:15px;
+    font-family: 'Battambang', cursive;
+    font-size:20px;
+    font-weight: bolder;
+}
+.picture{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    border:3px solid black;
+}
+
+#search_btns button:nth-child(1) {
+	bottom: 12px;
+}
+#search_btns button {
+	position: relative;
+	height: 34px;
+	margin: 3px;
+	font-weight: bold;
+    color: black;
+    background: rgb(203,209,212);
+    border: 1px solid #f1f1f1;
+    border-radius: 2px;
+    padding: 0 15px;
+    overflow: hidden;
+    width:145px;
+    margin-top:50px;
+    margin-left:15px;
+}
+
+#search_btns button:hover {
+	color: black;
+	border: 1px solid #bdbdbd;
+	box-shadow: 0px 0.5px 0px 0px #d3d3d3;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+#search_btns button:active {
+	border: 1px solid #7f7fff;
+}
+
+#search_btns button:focus {
+	outline: 0;
+}
+
+#search_btns button ul li {
+	list-style-type: none;
+	padding: 5px 0;
+	text-align: left;
+    margin-top:0px;
+}
+
+#search_btns button ul li a {
+	text-align:center;
+    color:black;
+    text-decoration: none;
+}
+
+#search_btns button ul {
+	padding-left: 0;
+	position: absolute;
+	bottom: -135px;
+	width: 144px;
 }
 
 nav {
@@ -49,11 +121,71 @@ nav li{
 }
 
 nav a{
-    color:#444;
+    color:black;
     text-decoration: none;
 }
 
 iframe { width: 99.7%; height: 660px; border: 2px solid #ccc; border-radius: 0px; padding: none; }
+
+button{
+    height:50px;
+    width:50px;
+    text-align: center;
+    margin-left:10px;
+}
+
+.button-image{
+    height:50px;
+    width:50px;
+}
+
+.github-button{
+    background: url(../images/github.png);
+    background-size:cover;
+    background-color: rgb(195,200,205);
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.linkedin-button{
+    background: url(../images/linkedin.png);
+    background-size:cover;
+    background-color: rgb(195,200,205);
+    fill-opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+div{
+    text-align:center;
+}
+.text{
+    font-family: 'Battambang', cursive;
+    text-align: center;
+}
+
+.body-text{
+    font-family: 'Battambang', cursive;
+    text-align: center;
+    margin-top:0px;
+}
+
+.about-text{
+    text-align: left;
+    font-family: 'Battambang', cursive;
+    margin-left:200px;
+}
+
+.about-body-text{
+    text-align: left;
+    font-family: 'Battambang', cursive;
+    margin-left:200px;
+    margin-right:200px;
+    font-size: 20px; 
+}
 
 .draw-border {
     /*box-shadow: inset 0 0 0 4px black;
@@ -61,6 +193,7 @@ iframe { width: 99.7%; height: 660px; border: 2px solid #ccc; border-radius: 0px
     transition: color 0.25s 0.0833333333s;
     position: relative;
     padding:8px;
+    border-radius:40px;
 }
 .draw-border::before, .draw-border::after {
     border: 0 solid transparent;
@@ -74,12 +207,14 @@ iframe { width: 99.7%; height: 660px; border: 2px solid #ccc; border-radius: 0px
     right: 0;
 }
 .draw-border::before {
-    border-bottom-width: 4px;
-    border-left-width: 4px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-radius: 40px;
 }
 .draw-border::after {
-    border-top-width: 4px;
-    border-right-width: 4px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-radius: 40px;
 }
 .draw-border:hover {
     color: black;
